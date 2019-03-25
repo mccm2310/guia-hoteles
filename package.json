@@ -1,0 +1,16 @@
+{
+  "name": "guia-hoteles",
+  "version": "1.0.0",
+  "description": "Nuestro pimer proyecto de nodejs",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://mccm2310@bitbucket.org/mccm2310/guia-hoteles.git"
+  },
+  "author": "Mirlet Campos",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/mccm2310/guia-hoteles#readme"
+}
