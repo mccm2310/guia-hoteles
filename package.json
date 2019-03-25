@@ -1,7 +1,7 @@
 {
   "name": "guia-hoteles",
   "version": "1.0.0",
-  "description": "Nuestro pimer proyecto de nodejs",
+  "description": "Nuestro primer proyecto en nodejs",
   "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -12,5 +12,8 @@
   },
   "author": "Mirlet Campos",
   "license": "ISC",
-  "homepage": "https://bitbucket.org/mccm2310/guia-hoteles#readme"
+  "homepage": "https://bitbucket.org/mccm2310/guia-hoteles#readme",
+  "devDependencies": {
+    "lite-server": "^2.4.0"
+  }
 }
