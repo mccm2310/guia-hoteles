@@ -1,0 +1,64 @@
+
+/* Estilos custom*/
+
+.jumbotron {
+    background-color: rgba(219, 99, 15, 0.4) !important;
+}
+
+.quick-access {
+    font-size: 11px;
+    background-color: #e86518;
+    padding: .3rem .5rem;
+    margin: 0 .5rem;
+    text-align: center;
+    border-radius: 15px;
+}
+
+.quick-access a {
+    color: white;
+}
+
+.recommended {
+    border: 1px solid #cdcdcd;
+    padding: 0.5rem 1rem;
+    min-height: 15rem;
+    margin: 0 0.5rem;
+}
+
+.recommended h5{
+    text-align: center;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid blue;
+    padding-bottom: 0.3rem;
+}
+
+.in-list {
+    border: 1px solid #cdcdcd;
+    padding: 1.5rem 1rem 0.5rem 1rem;
+    min-height: 12rem;
+    margin: 0 0.5rem;
+}
+
+.in-list h5{
+    text-align: center;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid blue;
+    padding-bottom: 0.3rem;
+}
+
+.btn{
+    width: 100%;
+}
+
+footer{
+    background-color: #e86518;
+    color: white;
+    width: 100%;
+    margin-top: 2rem;
+    padding: 2rem 1.5rem .5rem 1.5rem;
+    font-size: small;
+}
+
+footer a {
+    color: white;
+}

@@ -1,54 +1,124 @@
 ﻿<!doctype html>
 <html lang="en">
-<head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/main.css">
 
-    <title>Curso 1</title>
-</head>
-<body>
-    <h1 class="text-center m-4">Hoteles</h1>
-    <div class="container">
-        <h4 class="m-2">Recomendados</h4>
-        <div class="row mt-2">            
-            <div class="col-sm-12 col-md">
-                <p>Hotel Praia Grande</p>
-                <span>Conoc&eacute; lomejor de Buzios y sentit&eacute; como en casa.</span>
+        <title>Curso 1</title>
+    </head>
+    <body>
+        <div class="jumbotron text-center border">
+            <h1>Alojamientos.com</h1>
+            <span>La mejor opci&oacute;n en cualquier parte del mundo.</span>
+        </div>
+        <div class="container">           
+            <div class="d-flex align-items-center m-b-4">
+                <div class="col flex-column quick-access">
+                    <a href="#">Como funciona?</a>
+                </div>
+                <div class="col flex-column quick-access">
+                    <a href="#">Medios de pago</a>
+                </div>
+                <div class="col flex-column quick-access">
+                    <a href="#">Paquetes y promociones</a>
+                </div>
+                <div class="col flex-column quick-access">
+                    <a href="#">Ofertas rel&aacute;mpago</a>
+                </div>
+                <div class="col flex-column quick-access">
+                    <a href="#">Lo m&aacute;s buscado</a>
+                </div>
+                <div class="col flex-column quick-access">
+                    <a href="#">Adelantate a la temporada</a>
+                </div>
             </div>
-            <div class="col-sm-12 col-md">
-                <p>Hotel R&iacute;o Atl&aacute;ntico</p>
-                <span>Ubicado en Copacabana, difrut&aacute; de las playas y el mágico ambiente de la ciudad.</span>
+            <h4 class="mx-2 my-4">Recomendados</h4>
+            <div class="d-flex flex-wrap mt-2">            
+                <div class="col-sm-12 col-md recommended d-flex flex-column justify-content-between">
+                    <div>
+                        <h5>Hotel Praia Grande</h5>
+                        <span>Conoc&eacute; lo mejor de Buzios y sentit&eacute; como en casa.</span>
+                    </div>
+                    <button class="btn btn-primary">Reservar</button>
+                </div>
+                <div class="col-sm-12 col-md recommended d-flex flex-column justify-content-between">
+                    <div>
+                        <h5>Hotel Rio Atl&aacute;ntico</h5>
+                        <span>Ubicado en Copacabana, difrut&aacute; de las playas y el m&aacute;gico ambiente de la ciudad.</span>
+                    </div>
+                    <button class="btn btn-primary">Reservar</button>
+                </div>
+                <div class="col-sm-12 col-md recommended d-flex flex-column justify-content-between">
+                    <div>
+                        <h5>Pousada Trinidade</h5>
+                        <span>Ven&iacute; a conocer una de las joyas oculta de Brasil, a pocas horas de Sao Paulo. Escap&aacute; de las multitudes y descans&aacute; en una playa paradis&iacute;aca.</span>
+                    </div>
+                    <button class="btn btn-primary">Reservar</button>
+                </div>
             </div>
-            <div class="col-sm-12 col-md">
-                <p>Pousada Trinidade</p>
-                <span>Vení a conocer una de las joyas oculta de Brasil, a pocas horas de Sao Paulo.</span>
+            <h5 class="my-4 mx-2">Otras opciones</h5>
+            <div class="d-flex flex-wrap mt-2">            
+                <div class="col-sm-12 col-md in-list d-flex flex-column justify-content-between">
+                    <div>
+                        <h5>Hostel Ilha do Mel</h5>
+                        <small>Destino poco conocido, lo que tiene de tranquilo lo tiene de hermoso. Ven&iacute;!</small>
+                    </div>
+                    <button class="btn btn-primary">
+                        <small>Ver</small>
+                    </button>
+                </div>
+                <div class="col-sm-12 col-md in-list d-flex flex-column justify-content-between">
+                    <div>
+                        <h5>Pousada Ilhabela</h5>
+                        <small>Parada obligatoria si viajas por la costa entre Rio do Janeiro y Sao Paulo</small>
+                    </div>
+                    <button class="btn btn-primary">
+                        <small>Ver</small>
+                    </button>
+                </div>
+                <div class="col-sm-12 col-md in-list d-flex flex-column justify-content-between">
+                    <div>
+                        <h5>Hotel Copacabana Inn</h5>
+                        <small>Descansa en un hotel 4 estrellas miestras te diviertes en Rio</small>
+                    </div>
+                    <button class="btn btn-primary">
+                        <small>Ver</small>
+                    </button>
+                </div>
             </div>
         </div>
-        <h5 class="m-2">Otras opciones</h5>
-        <div class="row mt-2">            
-            <div class="col-sm-12 col-md">
-                <p>Hostel Ilha do MEl</p>
-                <small></small>
-                <button class="btn btn-primary">Ver</button>
+        <footer>
+            <div class="row">
+                <div class="col-sm-12 col-md-4 d-flex flex-column">
+                    <p>Visita nuestras publicaciones en redes sociales.</p>
+                    <a href="www.facebook.com">Facebook</a>
+                    <a href="www.instagram.com">Instagram</a>
+                    <a href="www.twitter.com">Twitter</a>
+                </div>
+                <div class="col-sm-12 col-md-4 d-flex flex-column align-items-center">
+                    <h5>ALOJAMIENTOS.COM</h5>
+                    <address>Lavalleja 637. CABA. Argentina</address>
+                    <span>info@alojamientos.com</span>
+                </div>
+                <div class="col-sm-12 col-md-4 d-flex flex-column align-items-end">
+                    <a href="#">Nosotros</a>
+                    <a href="#">FAQ</a>
+                    <a href="#">T&eacute;rminos y condiciones</a>
+                    <a href="#">Contacto</a>
+                </div>                
             </div>
-            <div class="col-sm-12 col-md">
-                <p>Pousada Ilhabela</p>
-                <small></small>
-                <button class="btn btn-primary">Ver</button>
+            <div class="text-center m-t-2">
+                <p class="m-0">Alojamientos.com S.A.</p>
+                <small style="font-style:italic">Todos los derechos reservados. ©</small>
             </div>
-            <div class="col-sm-12 col-md">
-                <p>Hotel Copacabana Inn</p>
-                <small></small>
-                <button class="btn btn-primary">Ver</button>
-            </div>
-        </div>
-        </div>
-    <script src="node_modules/jquery/dist/jquery.min.js"></script>
-    <script src="node_modules/popper.js/dist/popper.min.js"></script>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-</body>
+        </footer>
+        <script src="node_modules/jquery/dist/jquery.min.js"></script>
+        <script src="node_modules/popper.js/dist/popper.min.js"></script>
+        <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    </body>
 </html>
