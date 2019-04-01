@@ -7,16 +7,45 @@
 
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="node_modules/open-iconic/font/css/open-iconic-bootstrap.min.css">
         <link rel="stylesheet" href="css/main.css">
 
         <title>Alojamientos.com</title>
     </head>
     <body>
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+            <a class="navbar-brand" href="#">Alojamientos.com</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./about.html">¿Qui&eacute;nes somos?</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./faq.html">FAQ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./form.html">Cont&aacute;ctanos</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
         <div class="jumbotron text-center">
             <h1>Alojamientos.com</h1>
             <span>La mejor opci&oacute;n en cualquier parte del mundo.</span>
         </div>
-        <div class="container">           
+        <div class="container">       
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item active"><a href="#">Home</a></li>
+                </ol>
+            </nav>    
             <div class="d-flex align-items-center m-b-4 flex-wrap">
                 <div class="col flex-column quick-access">
                     <a href="#">Paquetes y promociones</a>
@@ -35,22 +64,22 @@
                 </div>
             </div>
             <div class="d-flex align-items-center m-b-4 mt-4 align-items-stretch flex-wrap">
-                <div class="col-sm-12 col-md flex-column">
+                <div class="col-sm-12 col-md flex-column text-justify">
                     <p>
-                        <h5>Como funciona?</h5>
-                        <span class="text-justify">Busc&aacute; la ciudad a la que quieres viajar, eleg&iacute; la opci&oacute;n que m&aacute;s te convenga y reserv&aacute; o pag&aacute; tu alojamiento.</span>
+                        <h5>¿Como funciona?</h5>
+                        <span>Busc&aacute; la ciudad a la que quieres viajar, eleg&iacute; la opci&oacute;n que m&aacute;s te convenga y reserv&aacute; o pag&aacute; tu alojamiento.</span>
                     </p>
                 </div>
-                <div class="col-sm-12 col-md flex-column">
+                <div class="col-sm-12 col-md flex-column text-justify">
                     <p>
                         <h5>Medios de Pago</h5>
-                        <span class="text-justify">Pod&eacute;s pagar con dep&oacute;sitos, transferencias o tarjetas de cr&eacute;dito. Consult&aacute; <a href="#">ac&aacute;</a> los planes de financiamiento en cuotas.</span>
+                        <span>Pod&eacute;s pagar con dep&oacute;sitos, transferencias o tarjetas de cr&eacute;dito. Consult&aacute; <a href="#">ac&aacute;</a> los planes de financiamiento en cuotas.</span>
                     </p>
                 </div>
-                <div class="col-sm-12 col-md flex-column">
+                <div class="col-sm-12 col-md flex-column text-justify">
                     <p>
-                        <h5>Por que confiar en Alojamientos.com</h5>
-                        <span class="text-justify">Todos los pagos que realices son gestionados por nuestra plataforma y se liberar&aacute;n al proveedor una vez que realices el check-in en el alojamiento y este haya cumplido con lo ofrecido al momento de tu reserva. As&iacute; te garantizamos el mejor servicio.</span>
+                        <h5 class="text-left">¿Por qu&eacute; confiar en Alojamientos.com?</h5>
+                        <span>Todos los pagos que realices son gestionados por nuestra plataforma y se liberar&aacute;n al proveedor una vez que realices el check-in en el alojamiento y este haya cumplido con lo ofrecido al momento de tu reserva. As&iacute; te garantizamos el mejor servicio.</span>
                     </p>
                 </div>
             </div>
