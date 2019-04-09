@@ -22,45 +22,50 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="#"><small>Home</small></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./about.html">¿Qui&eacute;nes somos?</a>
+                        <a class="nav-link" href="./about.html"><small>¿Qui&eacute;nes somos?</small></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./faq.html">FAQ</a>
+                        <a class="nav-link" href="./table.html"><small>Tabla de precios</small></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./form.html">Cont&aacute;ctanos</a>
+                        <a class="nav-link" href="./faq.html"><small>FAQ</small></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./form.html"><small>Cont&aacute;ctanos</small></a>
                     </li>
                 </ul>
             </div>
         </nav>
         <div class="jumbotron text-center">
-            <h1>Alojamientos.com</h1>
+
+            <img class="banner" src="../assets/banner3.jpg" />
+            <img class="title" src="../assets/gif_banner.gif" />
             <span>La mejor opci&oacute;n en cualquier parte del mundo.</span>
         </div>
         <div class="container">       
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
-                    <li class="breadcrumb-item active"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item"><small><a href="./index.html">Home</a></small></li>
                 </ol>
             </nav>    
             <div class="d-flex align-items-center m-b-4 flex-wrap">
                 <div class="col flex-column quick-access">
-                    <a href="#">Paquetes y promociones</a>
+                    <a href="#"><span class="oi oi-briefcase"></span> Paquetes y promociones</a>
                 </div>
                 <div class="col flex-column quick-access">
-                    <a href="#">Ofertas rel&aacute;mpago</a>
+                    <a href="#"><span class="oi oi-bolt"></span> Ofertas rel&aacute;mpago</a>
                 </div>
                 <div class="col flex-column quick-access">
-                    <a href="#">Lo m&aacute;s buscado</a>
+                    <a href="#"><span class="oi oi-magnifying-glass"></span> Lo m&aacute;s buscado</a>
                 </div>
                 <div class="col flex-column quick-access">
-                    <a href="#">Adelant&aacute;te a la temporada</a>
+                    <a href="#"><span class="oi oi-calendar"></span> Adelant&aacute;te a la temporada</a>
                 </div>
                 <div class="col flex-column quick-access">
-                    <a href="#">Alojamiento para los pr&oacute;ximos d&iacute;as</a>
+                    <a href="#"><span class="oi oi-clock"></span> Alojamiento para los pr&oacute;ximos d&iacute;as</a>
                 </div>
             </div>
             <div class="d-flex align-items-center m-b-4 mt-4 align-items-stretch flex-wrap">
@@ -85,56 +90,86 @@
             </div>
             <h4 class="mx-2 my-4">Recomendados</h4>
             <div class="d-flex flex-wrap mt-2">            
-                <div class="col-sm-12 col-md recommended d-flex flex-column justify-content-between">
-                    <div>
-                        <h5>Hotel Praia Grande</h5>
-                        <span>Conoc&eacute; lo mejor de Buzios y sentit&eacute; como en casa.</span>
+                <div class="card col-sm-12 col-md recommended d-flex flex-column justify-content-between">
+                    <div class="card-body">
+                        <div class="card-img-header">
+                            <img src="../assets/hotels/H_praia_grande.jpg"/>
+                        </div>
+                        <h5 class="card-title">Hotel Praia Grande</h5>
+                        <span class="card-text">Conoc&eacute; lo mejor de Buzios y sentit&eacute; como en casa.</span>
                     </div>
-                    <button class="btn btn-primary">Reservar</button>
+                    <div class="card-footer">
+                        <button class="btn btn-primary">Reservar</button>
+                    </div>
                 </div>
-                <div class="col-sm-12 col-md recommended d-flex flex-column justify-content-between">
-                    <div>
-                        <h5>Hotel Rio Atl&aacute;ntico</h5>
-                        <span>Ubicado en Copacabana, difrut&aacute; de las playas y el m&aacute;gico ambiente de la ciudad.</span>
+                <div class="card col-sm-12 col-md recommended d-flex flex-column justify-content-between">
+                    <div class="card-body">
+                        <div class="card-img-header">
+                            <img src="../assets/hotels/H_rio_atlantico.jpg" />
+                        </div>
+                        <h5 class="card-title">Hotel Rio Atl&aacute;ntico</h5>
+                        <span class="card-text">Ubicado en Copacabana, difrut&aacute; de las playas y el m&aacute;gico ambiente de la ciudad.</span>
                     </div>
-                    <button class="btn btn-primary">Reservar</button>
+                    <div class="card-footer">
+                        <button class="btn btn-primary">Reservar</button>
+                    </div>
                 </div>
-                <div class="col-sm-12 col-md recommended d-flex flex-column justify-content-between">
-                    <div>
-                        <h5>Pousada Trinidade</h5>
-                        <span>Ven&iacute; a conocer una de las joyas oculta de Brasil, a pocas horas de Sao Paulo. Escap&aacute; de las multitudes y descans&aacute; en una playa paradis&iacute;aca.</span>
+                <div class="card col-sm-12 col-md recommended d-flex flex-column justify-content-between">
+                    <div class="card-body">
+                        <div class="card-img-header">
+                            <img src="../assets/hotels/P_trinidade.jpg" />
+                        </div>
+                        <h5 class="card-title">Pousada Trinidade</h5>
+                        <span class="card-text">Ven&iacute; a conocer una de las joyas oculta de Brasil, a pocas horas de Sao Paulo. Escap&aacute; de las multitudes y descans&aacute; en una playa paradis&iacute;aca.</span>
                     </div>
-                    <button class="btn btn-primary">Reservar</button>
+                    <div class="card-footer">
+                        <button class="btn btn-primary">Reservar</button>
+                    </div>
                 </div>
             </div>
             <h5 class="my-4 mx-2">Otras opciones</h5>
             <div class="d-flex flex-wrap mt-2">            
-                <div class="col-sm-12 col-md in-list d-flex flex-column justify-content-between">
-                    <div>
-                        <h5>Hostel Ilha do Mel</h5>
-                        <small>Destino poco conocido, lo que tiene de tranquilo lo tiene de hermoso. Ven&iacute;!</small>
+                <div class="card col-sm-12 col-md in-list d-flex flex-column justify-content-between">
+                    <div class="card-body">
+                        <div class="card-img-header">
+                            <img src="../assets/hotels/P_ihla_do_mel.jpg"/>
+                        </div>
+                        <h5 class="card-title">Hostel Ilha do Mel</h5>
+                        <small class="card-text">Destino poco conocido, lo que tiene de tranquilo lo tiene de hermoso. Ven&iacute;!</small>
                     </div>
-                    <button class="btn btn-primary">
-                        <small>Ver</small>
-                    </button>
+                    <div class="card-footer">
+                        <button class="btn btn-primary">
+                            <small>Ver</small>
+                        </button>
+                    </div>
                 </div>
-                <div class="col-sm-12 col-md in-list d-flex flex-column justify-content-between">
-                    <div>
-                        <h5>Pousada Ilhabela</h5>
-                        <small>Parada obligatoria si viajas por la costa entre Rio do Janeiro y Sao Paulo</small>
+                <div class="card col-sm-12 col-md in-list d-flex flex-column justify-content-between">
+                    <div class="card-body">
+                        <div class="card-img-header">
+                            <img src="../assets/hotels/P_ihlabela.jpg" />
+                        </div>
+                        <h5 class="card-title">Pousada Ilhabela</h5>
+                        <small class="card-text">Parada obligatoria si viajas por la costa entre Rio do Janeiro y Sao Paulo</small>
                     </div>
-                    <button class="btn btn-primary">
-                        <small>Ver</small>
-                    </button>
+                    <div class="card-footer">
+                        <button class="btn btn-primary">
+                            <small>Ver</small>
+                        </button>
+                    </div>
                 </div>
-                <div class="col-sm-12 col-md in-list d-flex flex-column justify-content-between">
-                    <div>
-                        <h5>Hotel Copacabana Inn</h5>
-                        <small>Descansa en un hotel 4 estrellas miestras te diviertes en Rio</small>
+                <div class="card col-sm-12 col-md in-list d-flex flex-column justify-content-between">
+                    <div class="card-body">
+                        <div class="card-img-header">
+                            <img src="../assets/hotels/H_copacabana_inn.jpg" />
+                        </div>
+                        <h5 class="card-title">Hotel Copacabana Inn</h5>
+                        <small class="card-text">Descansa en un hotel 4 estrellas miestras te diviertes en Rio</small>
                     </div>
-                    <button class="btn btn-primary">
-                        <small>Ver</small>
-                    </button>
+                    <div class="card-footer">
+                        <button class="btn btn-primary">
+                            <small>Ver</small>
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
