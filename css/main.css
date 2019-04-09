@@ -8,11 +8,20 @@
 .quick-access {
     font-size: 11px;
     background-color: #e86518;
-    padding: .3rem .5rem;
+    padding: .3rem 1rem;
     margin: .25rem .5rem;
-    text-align: center;
-    border-radius: 15px;
     min-width: 7rem;
+}
+
+.quick-access-bar{
+    width: fit-content;
+    margin: 0 auto;
+}
+
+@media (max-width: 576px) {
+    .quick-access {
+        width: 100%;
+    }
 }
 
  footer a,
@@ -21,31 +30,7 @@
 }
 
 .recommended {
-    /*padding: .5rem 1rem;
-    min-height: 15rem;
-    margin: .25rem .5rem;*/
     flex: 1 200px;
-}
-
-.recommended h5{
-    /*text-align: center;
-    margin-bottom: 2rem;
-    border-bottom: 1px solid blue;
-    padding-bottom: .3rem;*/
-}
-
-.in-list {
-    /*border: 1px solid #cdcdcd;
-    padding: 1.5rem 1rem .5rem 1rem;
-    min-height: 12rem;
-    margin: .25rem .5rem;*/
-}
-
-.in-list h5{
-    /*text-align: center;
-    margin-bottom: 1rem;
-    border-bottom: 1px solid blue;
-    padding-bottom: .3rem;*/
 }
 
 .btn{
