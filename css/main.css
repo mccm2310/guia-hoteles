@@ -8,9 +8,8 @@
 .quick-access {
     font-size: 11px;
     background-color: #e86518;
-    padding: .3rem 1rem;
     margin: .25rem .5rem;
-    min-width: 7rem;
+    min-width: 4rem;
 }
 
 .quick-access-bar{
@@ -27,6 +26,12 @@
  footer a,
 .quick-access a{
     color: white;
+}
+
+ .quick-access a.active{
+    color: #e86518;
+    background-color: white;
+    border: 1px solid #e86518;
 }
 
 .recommended {

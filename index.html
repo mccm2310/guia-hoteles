@@ -40,7 +40,6 @@
             </div>
         </nav>
         <div class="jumbotron text-center">
-
             <img class="banner img-fluid" src="../assets/banner3.jpg" />
             <img class="title img-fluid" src="../assets/gif_banner.gif" />
             <span>La mejor opci&oacute;n en cualquier parte del mundo.</span>
@@ -51,125 +50,153 @@
                     <li class="breadcrumb-item"><small><a href="./index.html">Home</a></small></li>
                 </ol>
             </nav>    
-            <div class="quick-access-bar d-flex align-items-center m-b-4 flex-wrap">
-                <div class="bagde badge-pill quick-access">
-                    <a href="#"><span class="oi oi-briefcase"></span> Paquetes y promociones</a>
-                </div>
-                <div class="bagde badge-pill  quick-access">
-                    <a href="#"><span class="oi oi-bolt"></span> Ofertas rel&aacute;mpago</a>
-                </div>
-                <div class="bagde badge-pill quick-access">
-                    <a href="#"><span class="oi oi-magnifying-glass"></span> Lo m&aacute;s buscado</a>
-                </div>
-                <div class="bagde badge-pill quick-access">
-                    <a href="#"><span class="oi oi-calendar"></span> Adelant&aacute;te a la temporada</a>
-                </div>
-                <div class="bagde badge-pill quick-access">
-                    <a href="#"><span class="oi oi-clock"></span> Alojamiento para los pr&oacute;ximos d&iacute;as</a>
-                </div>
-            </div>
-            <div class="d-flex align-items-center m-b-4 mt-4 align-items-stretch flex-wrap">
-                <div class="col-sm-12 col-md flex-column text-justify">
-                    <p>
-                        <h5>¿Como funciona?</h5>
-                        <span>Busc&aacute; la ciudad a la que quieres viajar, eleg&iacute; la opci&oacute;n que m&aacute;s te convenga y reserv&aacute; o pag&aacute; tu alojamiento.</span>
-                    </p>
-                </div>
-                <div class="col-sm-12 col-md flex-column text-justify">
-                    <p>
-                        <h5>Medios de Pago</h5>
-                        <span>Pod&eacute;s pagar con dep&oacute;sitos, transferencias o tarjetas de cr&eacute;dito. Consult&aacute; <a href="#">ac&aacute;</a> los planes de financiamiento en cuotas.</span>
-                    </p>
-                </div>
-                <div class="col-sm-12 col-md flex-column text-justify">
-                    <p>
-                        <h5 class="text-left">¿Por qu&eacute; confiar en Alojamientos.com?</h5>
-                        <span>Todos los pagos que realices son gestionados por nuestra plataforma y se liberar&aacute;n al proveedor una vez que realices el check-in en el alojamiento y este haya cumplido con lo ofrecido al momento de tu reserva. As&iacute; te garantizamos el mejor servicio.</span>
-                    </p>
-                </div>
-            </div>
-            <h4 class="mx-2 my-4">Recomendados</h4>
-            <div class="d-flex flex-wrap mt-2">            
-                <div class="card col-sm-12 col-md recommended d-flex flex-column justify-content-between">
-                    <div class="card-body">
-                        <div class="card-img-header">
-                            <img class="img-fluid" src="../assets/hotels/H_praia_grande.jpg"/>
+            <ul class="quick-access-bar nav nav-pill align-items-center m-b-4" id="myPills">
+                <li class="nav-item quick-access" style="text-align:center">
+                    <a href="#home" class="nav-link active" id="home-tab" data-toggle="pill" role="tab" aria-controls="home" aria-selected="false">
+                    <span class="oi oi-home"></span></a>
+                </li>
+                <li class="nav-item quick-access">
+                    <a href="#promos" class="nav-link" id="promos-tab" data-toggle="pill" role="tab" aria-controls="promos" aria-selected="false">
+                    <span class="oi oi-briefcase"></span> Paquetes y promociones</a>
+                </li>
+                <li class="nav-item quick-access">
+                    <a href="#flash" class="nav-link" id="flash-tab" data-toggle="pill" role="tab" aria-controls="flash" aria-selected="false">
+                    <span class="oi oi-bolt"></span> Ofertas rel&aacute;mpago</a>
+                </li>
+                <li class="nav-item quick-access">
+                    <a href="#wanted" class="nav-link" id="wanted-tab" data-toggle="pill" role="tab" aria-controls="wanted" aria-selected="false">
+                    <span class="oi oi-magnifying-glass"></span> Lo m&aacute;s buscado</a>
+                </li>
+                <li class="nav-item quick-access">
+                    <a href="#season" class="nav-link" id="season-tab" data-toggle="pill" role="tab" aria-controls="season" aria-selected="false">
+                    <span class="oi oi-calendar"></span> Adelant&aacute;te a la temporada</a>
+                </li>
+                <li class="nav-item quick-access">
+                    <a href="#urgent" class="nav-link" id="urgent-tab" data-toggle="pill" role="tab" aria-controls="urgent" aria-selected="false">
+                    <span class="oi oi-clock"></span> Alojamiento para los pr&oacute;ximos d&iacute;as</a>
+                </li>
+            </ul>
+            <div id="myPillsContent" class="tab-content">
+                <div id="home" class="tab-pane fade show active" role="tabpanel" area-labelledby="home-tab">
+                    <div class="d-flex align-items-center m-b-4 mt-4 align-items-stretch flex-wrap">
+                        <div class="col-sm-12 col-md flex-column text-justify">
+                            <p>
+                                <h5>¿Como funciona?</h5>
+                                <span>Busc&aacute; la ciudad a la que quieres viajar, eleg&iacute; la opci&oacute;n que m&aacute;s te convenga y reserv&aacute; o pag&aacute; tu alojamiento.</span>
+                            </p>
                         </div>
-                        <h5 class="card-title">Hotel Praia Grande</h5>
-                        <span class="card-text">Conoc&eacute; lo mejor de Buzios y sentit&eacute; como en casa.</span>
+                        <div class="col-sm-12 col-md flex-column text-justify">
+                            <p>
+                                <h5>Medios de Pago</h5>
+                                <span>Pod&eacute;s pagar con dep&oacute;sitos, transferencias o tarjetas de cr&eacute;dito. Consult&aacute; <a href="#">ac&aacute;</a> los planes de financiamiento en cuotas.</span>
+                            </p>
+                        </div>
+                        <div class="col-sm-12 col-md flex-column text-justify">
+                            <p>
+                                <h5 class="text-left">¿Por qu&eacute; confiar en Alojamientos.com?</h5>
+                                <span>Todos los pagos que realices son gestionados por nuestra plataforma y se liberar&aacute;n al proveedor una vez que realices el check-in en el alojamiento y este haya cumplido con lo ofrecido al momento de tu reserva. As&iacute; te garantizamos el mejor servicio.</span>
+                            </p>
+                        </div>
                     </div>
-                    <div class="card-footer">
-                        <button class="btn btn-primary">Reservar</button>
+                    <h4 class="mx-2 my-4">Recomendados</h4>
+                    <div class="d-flex flex-wrap mt-2">
+                        <div class="card col-sm-12 col-md recommended d-flex flex-column justify-content-between">
+                            <div class="card-body">
+                                <div class="card-img-header">
+                                    <img class="img-fluid" src="../assets/hotels/H_praia_grande.jpg" />
+                                </div>
+                                <h5 class="card-title">Hotel Praia Grande</h5>
+                                <span class="card-text">Conoc&eacute; lo mejor de Buzios y sentit&eacute; como en casa.</span>
+                            </div>
+                            <div class="card-footer">
+                                <button class="btn btn-primary">Reservar</button>
+                            </div>
+                        </div>
+                        <div class="card col-sm-12 col-md recommended d-flex flex-column justify-content-between">
+                            <div class="card-body">
+                                <div class="card-img-header">
+                                    <img class="img-fluid" src="../assets/hotels/H_rio_atlantico.jpg" />
+                                </div>
+                                <h5 class="card-title">Hotel Rio Atl&aacute;ntico</h5>
+                                <span class="card-text">Ubicado en Copacabana, difrut&aacute; de las playas y el m&aacute;gico ambiente de la ciudad.</span>
+                            </div>
+                            <div class="card-footer">
+                                <button class="btn btn-primary">Reservar</button>
+                            </div>
+                        </div>
+                        <div class="card col-sm-12 col-md recommended d-flex flex-column justify-content-between">
+                            <div class="card-body">
+                                <div class="card-img-header">
+                                    <img class="img-fluid" src="../assets/hotels/P_trinidade.jpg" />
+                                </div>
+                                <h5 class="card-title">Pousada Trinidade</h5>
+                                <span class="card-text">Ven&iacute; a conocer una de las joyas oculta de Brasil, a pocas horas de Sao Paulo. Escap&aacute; de las multitudes y descans&aacute; en una playa paradis&iacute;aca.</span>
+                            </div>
+                            <div class="card-footer">
+                                <button class="btn btn-primary">Reservar</button>
+                            </div>
+                        </div>
+                    </div>
+                    <h5 class="my-4 mx-2">Otras opciones</h5>
+                    <div class="d-flex flex-wrap mt-2">
+                        <div class="card col-sm-12 col-md in-list d-flex flex-column justify-content-between">
+                            <div class="card-body">
+                                <div class="card-img-header">
+                                    <img class="img-fluid" src="../assets/hotels/P_ihla_do_mel.jpg" />
+                                </div>
+                                <h5 class="card-title">Hostel Ilha do Mel</h5>
+                                <small class="card-text">Destino poco conocido, lo que tiene de tranquilo lo tiene de hermoso. Ven&iacute;!</small>
+                            </div>
+                            <div class="card-footer">
+                                <button class="btn btn-primary">
+                                    <small>Ver</small>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="card col-sm-12 col-md in-list d-flex flex-column justify-content-between">
+                            <div class="card-body">
+                                <div class="card-img-header">
+                                    <img class="img-fluid" src="../assets/hotels/P_ihlabela.jpg" />
+                                </div>
+                                <h5 class="card-title">Pousada Ilhabela</h5>
+                                <small class="card-text">Parada obligatoria si viajas por la costa entre Rio do Janeiro y Sao Paulo</small>
+                            </div>
+                            <div class="card-footer">
+                                <button class="btn btn-primary">
+                                    <small>Ver</small>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="card col-sm-12 col-md in-list d-flex flex-column justify-content-between">
+                            <div class="card-body">
+                                <div class="card-img-header">
+                                    <img class="img-fluid" src="../assets/hotels/H_copacabana_inn.jpg" />
+                                </div>
+                                <h5 class="card-title">Hotel Copacabana Inn</h5>
+                                <small class="card-text">Descansa en un hotel 4 estrellas miestras te diviertes en Rio</small>
+                            </div>
+                            <div class="card-footer">
+                                <button class="btn btn-primary">
+                                    <small>Ver</small>
+                                </button>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="card col-sm-12 col-md recommended d-flex flex-column justify-content-between">
-                    <div class="card-body">
-                        <div class="card-img-header">
-                            <img class="img-fluid" src="../assets/hotels/H_rio_atlantico.jpg" />
-                        </div>
-                        <h5 class="card-title">Hotel Rio Atl&aacute;ntico</h5>
-                        <span class="card-text">Ubicado en Copacabana, difrut&aacute; de las playas y el m&aacute;gico ambiente de la ciudad.</span>
-                    </div>
-                    <div class="card-footer">
-                        <button class="btn btn-primary">Reservar</button>
-                    </div>
+                <div id="promos" class="tab-pane fade show" role="tabpanel" area-labelledby="promos-tab">
+                    <div class="mt-4">Estamos trabajando en esta secci&oacute;n. Pronto ver&aacute;s nuestros Paquetes y promociones.</div>
                 </div>
-                <div class="card col-sm-12 col-md recommended d-flex flex-column justify-content-between">
-                    <div class="card-body">
-                        <div class="card-img-header">
-                            <img class="img-fluid" src="../assets/hotels/P_trinidade.jpg" />
-                        </div>
-                        <h5 class="card-title">Pousada Trinidade</h5>
-                        <span class="card-text">Ven&iacute; a conocer una de las joyas oculta de Brasil, a pocas horas de Sao Paulo. Escap&aacute; de las multitudes y descans&aacute; en una playa paradis&iacute;aca.</span>
-                    </div>
-                    <div class="card-footer">
-                        <button class="btn btn-primary">Reservar</button>
-                    </div>
+                <div id="flash" class="tab-pane fade show" role="tabpanel" area-labelledby="flash-tab">
+                    <div class="mt-4">Estamos trabajando en esta secci&oacute;n. Pronto ver&aacute;s nuestras Ofertas Rel&aacute;mpago.</div>
                 </div>
-            </div>
-            <h5 class="my-4 mx-2">Otras opciones</h5>
-            <div class="d-flex flex-wrap mt-2">            
-                <div class="card col-sm-12 col-md in-list d-flex flex-column justify-content-between">
-                    <div class="card-body">
-                        <div class="card-img-header">
-                            <img class="img-fluid" src="../assets/hotels/P_ihla_do_mel.jpg"/>
-                        </div>
-                        <h5 class="card-title">Hostel Ilha do Mel</h5>
-                        <small class="card-text">Destino poco conocido, lo que tiene de tranquilo lo tiene de hermoso. Ven&iacute;!</small>
-                    </div>
-                    <div class="card-footer">
-                        <button class="btn btn-primary">
-                            <small>Ver</small>
-                        </button>
-                    </div>
+                <div id="wanted" class="tab-pane fade show" role="tabpanel" area-labelledby="wanted-tab">
+                    <div class="mt-4">Estamos trabajando en esta secci&oacute;n. Pronto ver&aacute;s Lo m&aacute;s buscado por nuestros usuarios.</div>
                 </div>
-                <div class="card col-sm-12 col-md in-list d-flex flex-column justify-content-between">
-                    <div class="card-body">
-                        <div class="card-img-header">
-                            <img class="img-fluid" src="../assets/hotels/P_ihlabela.jpg" />
-                        </div>
-                        <h5 class="card-title">Pousada Ilhabela</h5>
-                        <small class="card-text">Parada obligatoria si viajas por la costa entre Rio do Janeiro y Sao Paulo</small>
-                    </div>
-                    <div class="card-footer">
-                        <button class="btn btn-primary">
-                            <small>Ver</small>
-                        </button>
-                    </div>
+                <div id="season" class="tab-pane fade show" role="tabpanel" area-labelledby="season-tab">
+                    <div class="mt-4">Estamos trabajando en esta secci&oacute;n. Pronto podr&aacute;s Adelant&aacute;te a la temporada.</div>
                 </div>
-                <div class="card col-sm-12 col-md in-list d-flex flex-column justify-content-between">
-                    <div class="card-body">
-                        <div class="card-img-header">
-                            <img class="img-fluid" src="../assets/hotels/H_copacabana_inn.jpg" />
-                        </div>
-                        <h5 class="card-title">Hotel Copacabana Inn</h5>
-                        <small class="card-text">Descansa en un hotel 4 estrellas miestras te diviertes en Rio</small>
-                    </div>
-                    <div class="card-footer">
-                        <button class="btn btn-primary">
-                            <small>Ver</small>
-                        </button>
-                    </div>
+                <div id="urgent" class="tab-pane fade show" role="tabpanel" area-labelledby="urgent-tab">
+                    <div class="mt-4">Estamos trabajando en esta secci&oacute;n. Pronto podr&aacute;s conseguir Alojamiento para los pr&oacute;ximos d&iacute;as.</div>
                 </div>
             </div>
         </div>
