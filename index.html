@@ -49,55 +49,77 @@
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><small><a href="./index.html">Home</a></small></li>
                 </ol>
-            </nav>    
-            <ul class="quick-access-bar nav nav-pill align-items-center m-b-4" id="myPills">
-                <li class="nav-item quick-access" style="text-align:center">
-                    <a href="#home" class="nav-link active" id="home-tab" data-toggle="pill" role="tab" aria-controls="home" aria-selected="false">
-                    <span class="oi oi-home"></span></a>
-                </li>
-                <li class="nav-item quick-access">
-                    <a href="#promos" class="nav-link" id="promos-tab" data-toggle="pill" role="tab" aria-controls="promos" aria-selected="false">
-                    <span class="oi oi-briefcase"></span> Paquetes y promociones</a>
-                </li>
-                <li class="nav-item quick-access">
-                    <a href="#flash" class="nav-link" id="flash-tab" data-toggle="pill" role="tab" aria-controls="flash" aria-selected="false">
-                    <span class="oi oi-bolt"></span> Ofertas rel&aacute;mpago</a>
-                </li>
-                <li class="nav-item quick-access">
-                    <a href="#wanted" class="nav-link" id="wanted-tab" data-toggle="pill" role="tab" aria-controls="wanted" aria-selected="false">
-                    <span class="oi oi-magnifying-glass"></span> Lo m&aacute;s buscado</a>
-                </li>
-                <li class="nav-item quick-access">
-                    <a href="#season" class="nav-link" id="season-tab" data-toggle="pill" role="tab" aria-controls="season" aria-selected="false">
-                    <span class="oi oi-calendar"></span> Adelant&aacute;te a la temporada</a>
-                </li>
-                <li class="nav-item quick-access">
-                    <a href="#urgent" class="nav-link" id="urgent-tab" data-toggle="pill" role="tab" aria-controls="urgent" aria-selected="false">
-                    <span class="oi oi-clock"></span> Alojamiento para los pr&oacute;ximos d&iacute;as</a>
-                </li>
-            </ul>
-            <div id="myPillsContent" class="tab-content">
-                <div id="home" class="tab-pane fade show active" role="tabpanel" area-labelledby="home-tab">
-                    <div class="d-flex align-items-center m-b-4 mt-4 align-items-stretch flex-wrap">
-                        <div class="col-sm-12 col-md flex-column text-justify">
-                            <p>
-                                <h5>¿Como funciona?</h5>
-                                <span>Busc&aacute; la ciudad a la que quieres viajar, eleg&iacute; la opci&oacute;n que m&aacute;s te convenga y reserv&aacute; o pag&aacute; tu alojamiento.</span>
-                            </p>
+            </nav>
+            <div class="row">
+                <div class="col-sm-12 col-md">
+                    <button class="btn btn-primary" data-toggle="collapse" data-target="#function" aria-expanded="false" aria-controls="multiCollapse1">¿Como funciona?</button>
+                </div>
+                <div class="col-sm-12 col-md">
+                    <button class="btn btn-primary" data-toggle="collapse" data-target="#payments" aria-expanded="false" aria-controls="multiCollapse2">Medios de Pago</button>
+                </div>
+                <div class="col-sm-12 col-md">
+                    <button class="btn btn-primary" data-toggle="collapse" data-target="#trusted" aria-expanded="false" aria-controls="multiCollapse3">¿Por qu&eacute; confiar en Alojamientos.com?</button>
+                </div>
+            </div>    
+            <div class="row">
+                <div class="col-sm-12 col-md-4">
+                    <div class="collapse multi-collapse text-justify"  id="function">
+                        <div style="padding: 1rem">
+                            <small>Busc&aacute; la ciudad a la que quieres viajar, eleg&iacute; la opci&oacute;n que m&aacute;s te convenga y reserv&aacute; o pag&aacute; tu alojamiento.</small>
                         </div>
-                        <div class="col-sm-12 col-md flex-column text-justify">
-                            <p>
-                                <h5>Medios de Pago</h5>
-                                <span>Pod&eacute;s pagar con dep&oacute;sitos, transferencias o tarjetas de cr&eacute;dito. Consult&aacute; <a href="#">ac&aacute;</a> los planes de financiamiento en cuotas.</span>
-                            </p>
-                        </div>
-                        <div class="col-sm-12 col-md flex-column text-justify">
-                            <p>
-                                <h5 class="text-left">¿Por qu&eacute; confiar en Alojamientos.com?</h5>
-                                <span>Todos los pagos que realices son gestionados por nuestra plataforma y se liberar&aacute;n al proveedor una vez que realices el check-in en el alojamiento y este haya cumplido con lo ofrecido al momento de tu reserva. As&iacute; te garantizamos el mejor servicio.</span>
-                            </p>
+                    </div>                    
+                </div>
+                <div class="col-sm-12 col-md">
+                    <div class="collapse multi-collapse text-justify" id="payments">
+                        <div style="padding: 1rem">
+                            <small>Pod&eacute;s pagar con dep&oacute;sitos, transferencias o tarjetas de cr&eacute;dito. Consult&aacute; <a href="#">ac&aacute;</a> los planes de financiamiento en cuotas.</small>
                         </div>
                     </div>
+                </div>
+                <div class="col-sm-12 col-md">
+                    <div class="collapse multi-collapse text-justify" id="trusted">
+                        <div style="padding: 1rem">
+                            <small>Todos los pagos que realices son gestionados por nuestra plataforma y se liberar&aacute;n al proveedor una vez que realices el check-in en el alojamiento y este haya cumplido con lo ofrecido al momento de tu reserva. As&iacute; te garantizamos el mejor servicio.</small>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+            <hr>
+                <ul class="quick-access-bar nav nav-pill align-items-center m-b-4" id="myPills">
+                    <li class="nav-item quick-access" style="text-align:center">
+                        <a href="#home" class="nav-link active" id="home-tab" data-toggle="pill" role="tab" aria-controls="home" aria-selected="false">
+                            <span class="oi oi-home"></span>
+                        </a>
+                    </li>
+                    <li class="nav-item quick-access">
+                        <a href="#promos" class="nav-link" id="promos-tab" data-toggle="pill" role="tab" aria-controls="promos" aria-selected="false">
+                            <span class="oi oi-briefcase"></span> Paquetes y promociones
+                        </a>
+                    </li>
+                    <li class="nav-item quick-access">
+                        <a href="#flash" class="nav-link" id="flash-tab" data-toggle="pill" role="tab" aria-controls="flash" aria-selected="false">
+                            <span class="oi oi-bolt"></span> Ofertas rel&aacute;mpago
+                        </a>
+                    </li>
+                    <li class="nav-item quick-access">
+                        <a href="#wanted" class="nav-link" id="wanted-tab" data-toggle="pill" role="tab" aria-controls="wanted" aria-selected="false">
+                            <span class="oi oi-magnifying-glass"></span> Lo m&aacute;s buscado
+                        </a>
+                    </li>
+                    <li class="nav-item quick-access">
+                        <a href="#season" class="nav-link" id="season-tab" data-toggle="pill" role="tab" aria-controls="season" aria-selected="false">
+                            <span class="oi oi-calendar"></span> Adelant&aacute;te a la temporada
+                        </a>
+                    </li>
+                    <li class="nav-item quick-access">
+                        <a href="#urgent" class="nav-link" id="urgent-tab" data-toggle="pill" role="tab" aria-controls="urgent" aria-selected="false">
+                            <span class="oi oi-clock"></span> Alojamiento para los pr&oacute;ximos d&iacute;as
+                        </a>
+                    </li>
+                </ul>
+            <hr>
+            <div id="myPillsContent" class="tab-content">
+                <div id="home" class="tab-pane fade show active" role="tabpanel" area-labelledby="home-tab">
                     <h4 class="mx-2 my-4">Recomendados</h4>
                     <div class="d-flex flex-wrap mt-2">
                         <div class="card col-sm-12 col-md recommended d-flex flex-column justify-content-between">
