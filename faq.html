@@ -132,12 +132,44 @@
                         <div id="collapseFour" class="collapse" aria-labelledby="headingFour"
                              data-parent="#accordionAbout">
                             <div class="card-body text-justify">
-                                <small>
-                                    Si realizaste con nosotros tu reserva, te llegar&aacute; un email al d&iacute;a siguiente de haber terminado tu hospedaje.
+                                
+                                    <small>Si realizaste con nosotros tu reserva, te llegar&aacute; un email al d&iacute;a siguiente de haber terminado tu hospedaje.
                                     De esta forma tendr&aacute;s acceso al formulario de calificaci&oacute;n. Si ya pas&oacute; mas de un d&iacute; y no has recibido
-                                    el mail, haz clic <a>ac&aacute;</a>.
-                                </small>
+                                    el mail, haz clic 
+                                    <a href="#" data-toggle="modal" data-target="#askExpirienceForm">ac&aacute;</a>.
+                                    </small>
+</span>
                             </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="askExpirienceForm" tabindex="-1" role="dialog" aria-labelledby="askExpirienceFormModal" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="askExpirienceFormModal">Reenv&iacute;o de Formulario.</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="form-group">
+                                    <div class="col-md-12">
+                                        <label><small>Nro de reserva de tu alojamiento.</small></label>
+                                        <input type="text" />
+                                    </div>
+                                    <div class="col-md-12" style="margin-top:0.5rem">
+                                        <input type="checkbox" id="acceptTerms" style="vertical-align: top; margin-top: 0.5rem;"/>
+                                        <label for="acceptTerms" class="text-justify" style="width:95%"><small>Declaro que ya he terminado de usar los servicios del alojamiento reservado. La experiencia a contar es propia y no de un tercero. Acepto que de demostrarse el incumplimiento de los <a href="#" >t&eacute;rminos y condiciones</a> se podr&aacute;n iniciar acciones en mi contra.</small></label>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" data-dismiss="modal" class="btn btn-danger float-right">Cancelar</button>
+                            <button type="button" data-dismiss="modal" class="btn btn-primary float-right">Aceptar</button>
                         </div>
                     </div>
                 </div>
