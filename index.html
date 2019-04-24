@@ -8,11 +8,11 @@
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
         <link rel="stylesheet" href="node_modules/open-iconic/font/css/open-iconic-bootstrap.min.css">
-        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/styles.css">
 
         <title>Alojamientos.com</title>
     </head>
-    <body>
+    <body class="index-view">
         <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
             <a class="navbar-brand" href="#">Alojamientos.com</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
@@ -326,6 +326,9 @@
                 <div id="urgent" class="tab-pane fade show" role="tabpanel" area-labelledby="urgent-tab">
                     <div class="mt-4">Estamos trabajando en esta secci&oacute;n. Pronto podr&aacute;s conseguir Alojamiento para los pr&oacute;ximos d&iacute;as.</div>
                 </div>
+            </div>
+            <div class="">
+                <button class="btn btn-outline-warning contact-btn" id="contactBtn" data-toggle="modal" data-target="#contactModal"><small>Quiero que me contacten</small></button>
             </div>
         </div>
         <div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contactModal" aria-hidden="true">
