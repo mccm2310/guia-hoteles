@@ -74,7 +74,7 @@ footer{
 .card .card-footer{
     padding: 0 !important;
     border: unset;
-    background-color:none !important;
+    background-color:unset !important;
 }
 
 .card .card-img-header img{

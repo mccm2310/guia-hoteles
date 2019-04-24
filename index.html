@@ -166,7 +166,7 @@
                             </div>
                             <div class="card-footer">
                                 <div class="">
-                                    <button class="btn btn-outline-warning contact-btn" data-toggle="modal" data-target="#contactModal"><small>Quiero que me contacten</small></button>
+                                    <button class="btn btn-outline-warning contact-btn" id="contactBtn" data-toggle="modal" data-target="#contactModal"><small>Quiero que me contacten</small></button>
                                 </div>
                                 <button class="btn btn-primary">Reservar</button>
                             </div>
@@ -195,7 +195,7 @@
                             </div>
                             <div class="card-footer">
                                 <div class="">
-                                    <button class="btn btn-outline-warning contact-btn" data-toggle="modal" data-target="#contactModal"><small>Quiero que me contacten</small></button>
+                                    <button class="btn btn-outline-warning contact-btn" id="contactBtn" data-toggle="modal" data-target="#contactModal"><small>Quiero que me contacten</small></button>
                                 </div>
                                 <button class="btn btn-primary">Reservar</button>
                             </div>
@@ -222,7 +222,7 @@
                             </div>
                             <div class="card-footer">
                                 <div class="">
-                                    <button class="btn btn-outline-warning contact-btn" data-toggle="modal" data-target="#contactModal"><small>Quiero que me contacten</small></button>
+                                    <button class="btn btn-outline-warning contact-btn" id="contactBtn" data-toggle="modal" data-target="#contactModal"><small>Quiero que me contacten</small></button>
                                 </div>
                                 <button class="btn btn-primary">Reservar</button>
                             </div>
@@ -327,9 +327,6 @@
                     <div class="mt-4">Estamos trabajando en esta secci&oacute;n. Pronto podr&aacute;s conseguir Alojamiento para los pr&oacute;ximos d&iacute;as.</div>
                 </div>
             </div>
-            <div class="">
-                <button class="btn btn-outline-warning contact-btn" data-toggle="modal" data-target="#contactModal"><small>Quiero que me contacten</small></button>
-            </div>
         </div>
         <div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contactModal" aria-hidden="true">
             <div class="modal-dialog" role="document">
@@ -414,6 +411,24 @@
         $("[data-toggle='popover']").popover();
         $('.carousel').carousel({
             interval: 4000
+        });
+        $('#contactModal').on('show.bs.modal', function (e) {
+            console.log("el modal està abriendo.");
+            $('.contact-btn').removeClass('btn-outline-warning');
+            $('.contact-btn').addClass('btn-primary');
+            $('.contact-btn').prop('disabled', true);
+        });
+        $('#contactModal').on('shown.bs.modal', function (e) {
+            console.log("S terminò de abrir el modal.");
+        });
+        $('#contactModal').on('hide.bs.modal', function (e) {
+            console.log("el modal se està ocultando.");
+        });
+        $('#contactModal').on('hidden.bs.modal', function (e) {
+            console.log("El modal terminò de ocultarse.");
+            $('.contact-btn').addClass('btn-outline-warning');
+            $('.contact-btn').removeClass('btn-primary');
+            $('.contact-btn').prop('disabled', false);
         });
     });
 </script>
