@@ -40,6 +40,7 @@
 
 .btn{
     width: 100%;
+    border-radius: unset !important;
 }
 
 footer{
@@ -61,10 +62,19 @@ footer{
     padding: 0 !important;
 }
 
+.card-body {
+    cursor: default;
+}
+
+.card-title h5{
+    margin: 0 !important;
+    cursor: pointer;
+}
+
 .card .card-footer{
     padding: 0 !important;
     border: unset;
-    background-color:none;
+    background-color:none !important;
 }
 
 .card .card-img-header img{
@@ -96,4 +106,16 @@ hr {
     margin:1.5rem 0 1rem;
 }
 
+.contact-btn {
+    margin-top:0.5rem;
+    color:#E86519;
+    border-color:#E86519;
+}
 
+.btn-outline-warning:hover {
+    background-color: #ffc10730 !important;
+}
+
+.oi {
+    margin: 0 0.3rem;
+}
