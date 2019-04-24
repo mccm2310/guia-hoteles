@@ -119,6 +119,27 @@
                 </ul>
             <hr>
             <div id="myPillsContent" class="tab-content">
+                <div id="hotelsCarousel" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="d-block w-100" src="../assets/carousel/buenos_aires.png" alt="Primer slide"/>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="../assets/carousel/rio_do_janeiro.png" alt="Segundo slide" />
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="../assets/carousel/santiago_de_chile.png" alt="Tercer slide" />
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#hotelsCarousel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Anterior</span>
+                    </a>
+                    <a class="carousel-control-next" href="#hotelsCarousel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Siguiente</span>
+                    </a>
+                </div>
                 <div id="home" class="tab-pane fade show active" role="tabpanel" area-labelledby="home-tab">
                     <h4 class="mx-2 my-4">Recomendados</h4>
                     <div class="d-flex flex-wrap mt-2">
@@ -306,6 +327,9 @@
                     <div class="mt-4">Estamos trabajando en esta secci&oacute;n. Pronto podr&aacute;s conseguir Alojamiento para los pr&oacute;ximos d&iacute;as.</div>
                 </div>
             </div>
+            <div class="">
+                <button class="btn btn-outline-warning contact-btn" data-toggle="modal" data-target="#contactModal"><small>Quiero que me contacten</small></button>
+            </div>
         </div>
         <div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contactModal" aria-hidden="true">
             <div class="modal-dialog" role="document">
@@ -318,18 +342,18 @@
                     </div>
                     <div class="modal-body">
                         <form>
-                            <div class="form-group">
-                                <div class="col-md col-sm-12">
+                            <div class="form-group row">
+                                <div class="col-md-6 col-sm-12">
                                     <label><small>Nombre</small></label>
                                     <input type="text" />
                                 </div>
-                                <div class="col-md col-sm-12">
+                                <div class="col-md-6 col-sm-12">
                                     <label><small>Email</small></label>
                                     <input type="text" />
                                 </div>
-                                <div class="col-md col-sm-12">
+                                <div class="col-sm-12">
                                     <label><small>Comentarios</small></label>
-                                    <textarea></textarea>
+                                    <textarea style="width: 100%" resize="false"></textarea>
                                 </div>
                                 <div class="col-md-12" style="margin-top:0.3rem">
                                     <input type="checkbox" id="acceptTerms" style="vertical-align: top; margin-top: 0.5rem;" />
@@ -388,5 +412,8 @@
     $(function () {
         $("[data-toggle='tooltip']").tooltip();
         $("[data-toggle='popover']").popover();
+        $('.carousel').carousel({
+            interval: 4000
+        });
     });
 </script>

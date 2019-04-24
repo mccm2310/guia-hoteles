@@ -87,7 +87,8 @@ footer{
     padding: 3.5rem 0 1.5rem !important;
 }
 
-.jumbotron .banner{
+.jumbotron .banner,
+input[type=text]{
     width: 100%;
     margin-bottom: 1rem;
 }
@@ -119,3 +120,9 @@ hr {
 .oi {
     margin: 0 0.3rem;
 }
+
+label {
+    width: 6rem;
+    vertical-align: top;
+}
+
