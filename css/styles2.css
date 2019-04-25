@@ -1,0 +1,145 @@
+/* Estilos custom*/
+.jumbotron {
+  background-color: #f2c1a9;
+  padding-top: 3.5rem;
+  padding-right: 0;
+  padding-bottom: 1.5rem;
+  padding-left: 0;
+}
+.jumbotron .banner {
+  width: 100%;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+.jumbotron .title {
+  width: 30%;
+  margin-top: 0;
+  margin-right: auto;
+  margin-bottom: 0;
+  margin-left: auto;
+  display: block;
+}
+input[type=text] {
+  width: 100%;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+.quick-access {
+  font-size: 11px;
+  background-color: #e86518;
+  margin-top: 0.25rem;
+  margin-right: 0.5rem;
+  margin-bottom: 0.25rem;
+  margin-left: 0.5rem;
+  min-width: 4rem;
+}
+.quick-access a {
+  color: #ffffff;
+}
+.quick-access a.active {
+  border: 1px solid #e86518;
+  color: #e86518;
+  background-color: #ffffff;
+  border-radius: 0;
+}
+.quick-access-bar {
+  width: fit-content;
+  margin-top: 0;
+  margin-right: auto;
+  margin-bottom: 0;
+  margin-left: auto;
+}
+@media (max-width: 576px) {
+  .quick-access {
+    width: 100%;
+  }
+}
+footer a {
+  color: #ffffff;
+}
+.recommended {
+  flex: 1 200px;
+}
+.btn {
+  width: 100%;
+  border-radius: unset !important;
+}
+footer {
+  border: unset;
+  color: #ffffff;
+  background-color: #e86518;
+  border-radius: 0;
+  width: 100%;
+  margin-top: 2rem;
+  margin-bottom: 0;
+  padding-top: 2rem;
+  padding-right: 1.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1.5rem;
+  font-size: small;
+  position: relative;
+  bottom: 0;
+}
+.container {
+  min-height: 26rem;
+}
+.card {
+  padding-top: 0;
+  padding-right: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+}
+.card .card-footer {
+  padding-top: 0;
+  padding-right: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  border: unset;
+  color: #000000;
+  background-color: unset;
+  border-radius: 0;
+}
+.card .card-img-header img {
+  max-height: 10rem;
+  width: 100%;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+.card-body {
+  cursor: default;
+}
+.card-title h5 {
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+  cursor: pointer;
+}
+hr {
+  border-bottom: 1px solid #ececec;
+  border-top: 1px solid #ececec;
+  width: 100%;
+  margin-top: 1.5rem;
+  margin-right: 0;
+  margin-bottom: 1rem;
+  margin-left: 0;
+}
+.contact-btn {
+  margin-top: 0.5rem;
+  margin-bottom: 0;
+  color: #e86518;
+  border-color: #e86518;
+}
+.btn-outline-warning:hover {
+  background-color: #fff3d8 !important;
+}
+.oi {
+  margin-top: 0;
+  margin-right: 0.3rem;
+  margin-bottom: 0;
+  margin-left: 0.3rem;
+}
+.index-view label {
+  width: 6rem;
+  vertical-align: top;
+}
