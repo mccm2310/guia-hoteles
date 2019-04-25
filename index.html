@@ -5,10 +5,11 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-        <!-- Bootstrap CSS -->
+        <!-- build:css dist/index.css -->
         <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
         <link rel="stylesheet" href="node_modules/open-iconic/font/css/open-iconic-bootstrap.min.css">
-        <link rel="stylesheet" href="css/styles2.css">
+        <link rel="stylesheet" href="css/styles.css">
+        <!-- endbuild -->
 
         <title>Alojamientos.com</title>
     </head>
@@ -402,36 +403,37 @@
                 <small style="font-style:italic">Todos los derechos reservados. ©</small>
             </div>
         </footer>
+        <!-- build:js dist/index.js -->
         <script src="node_modules/jquery/dist/jquery.min.js"></script>
-        <script src="https://getbootstrap.com/docs/4.1/assets/js/vendor/popper.min.js"></script>
+        <script src="node_modules/popper.js/dist/popper.min.js"></script>
         <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script>
+            $(function () {
+                $("[data-toggle='tooltip']").tooltip();
+                $("[data-toggle='popover']").popover();
+                $('.carousel').carousel({
+                    interval: 4000
+                });
+                $('#contactModal').on('show.bs.modal', function (e) {
+                    console.log("el modal està abriendo.");
+                    $('.contact-btn').removeClass('btn-outline-warning');
+                    $('.contact-btn').addClass('btn-primary');
+                    $('.contact-btn').prop('disabled', true);
+                });
+                $('#contactModal').on('shown.bs.modal', function (e) {
+                    console.log("S terminò de abrir el modal.");
+                });
+                $('#contactModal').on('hide.bs.modal', function (e) {
+                    console.log("el modal se està ocultando.");
+                });
+                $('#contactModal').on('hidden.bs.modal', function (e) {
+                    console.log("El modal terminò de ocultarse.");
+                    $('.contact-btn').addClass('btn-outline-warning');
+                    $('.contact-btn').removeClass('btn-primary');
+                    $('.contact-btn').prop('disabled', false);
+                });
+            });
+         </script>
+        <!-- endbuild -->       
     </body>
 </html>
-
-<script>
-    $(function () {
-        $("[data-toggle='tooltip']").tooltip();
-        $("[data-toggle='popover']").popover();
-        $('.carousel').carousel({
-            interval: 4000
-        });
-        $('#contactModal').on('show.bs.modal', function (e) {
-            console.log("el modal està abriendo.");
-            $('.contact-btn').removeClass('btn-outline-warning');
-            $('.contact-btn').addClass('btn-primary');
-            $('.contact-btn').prop('disabled', true);
-        });
-        $('#contactModal').on('shown.bs.modal', function (e) {
-            console.log("S terminò de abrir el modal.");
-        });
-        $('#contactModal').on('hide.bs.modal', function (e) {
-            console.log("el modal se està ocultando.");
-        });
-        $('#contactModal').on('hidden.bs.modal', function (e) {
-            console.log("El modal terminò de ocultarse.");
-            $('.contact-btn').addClass('btn-outline-warning');
-            $('.contact-btn').removeClass('btn-primary');
-            $('.contact-btn').prop('disabled', false);
-        });
-    });
-</script>
