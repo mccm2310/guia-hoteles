@@ -48,7 +48,6 @@ input[type=text] {
 @media (max-width: 576px) {
   .quick-access {
     width: 100%; } }
-
 footer a {
   color: #fff; }
 
@@ -135,3 +134,5 @@ hr {
 .index-view label {
   width: 6rem;
   vertical-align: top; }
+
+/*# sourceMappingURL=styles.css.map */
