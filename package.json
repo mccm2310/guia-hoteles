@@ -16,7 +16,6 @@
     "imageminCarousel": "imagemin assets/carousel/* --out-dir dist/assets/carousel",
     "imageminHotels": "imagemin assets/hotels/* --out-dir dist/assets/hotels",
     "usemin": "usemin index.html -d dist --htmlmin -o dist/index.html && usemin about.html -d dist --htmlmin -o dist/about.html && usemin faq.html -d dist --htmlmin -o dist/faq.html && usemin form.html -d dist --htmlmin -o dist/form.html && usemin table.html -d dist --htmlmin -o dist/table.html",
-    "build": "npm run clean && npm run scss && npm run imageminCarousel && npm run imageminHotels && npm run imagemin && npm run usemin",
     "postinstall": "ng build --aot --prod"
     },
   "engines": {
