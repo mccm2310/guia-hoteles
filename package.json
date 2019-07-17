@@ -5,7 +5,7 @@
   "main": "index.html",
   "scripts": {
     "dev": "lite-server",
-    "start": "concurrently \"npm run watch:scss\" \"npm run dev\" ",
+    "start": "start": "node server.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "scss": "node-sass -o css/ css/",
     "watch:scss": "onchange \"css/*.scss\" -- npm run scss ",
@@ -14,7 +14,18 @@
     "imageminCarousel": "imagemin assets/carousel/* --out-dir dist/assets/carousel",
     "imageminHotels": "imagemin assets/hotels/* --out-dir dist/assets/hotels",
     "usemin": "usemin index.html -d dist --htmlmin -o dist/index.html && usemin about.html -d dist --htmlmin -o dist/about.html && usemin faq.html -d dist --htmlmin -o dist/faq.html && usemin form.html -d dist --htmlmin -o dist/form.html && usemin table.html -d dist --htmlmin -o dist/table.html",
-    "build": "npm run clean && npm run scss && npm run imageminCarousel && npm run imageminHotels && npm run imagemin && npm run usemin"
+    "build": "npm run clean && npm run scss && npm run imageminCarousel && npm run imageminHotels && npm run imagemin && npm run usemin",
+    "postinstall": "ng build --aot --prod"
+    },
+  "engines": {
+    "node": "8.12.0",
+    "npm": "6.4.1"
+  },
+    "dependencies": {
+    "express": "^4.17.1",
+    "zone.js": "~0.8.26",
+    "@angular/cli": "^7.3.9",
+    "@angular/compiler-cli": "~7.2.0"
   },
   "repository": {
     "type": "git",
